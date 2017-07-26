@@ -9,7 +9,7 @@ public class Derivative {
     public static void main(String[] args) {
         BufferedReader lineReader = null;
         try {
-            lineReader = new BufferedReader(new FileReader("C:\\Users\\hungnv\\Downloads\\input.txt"));
+            lineReader = new BufferedReader(new FileReader(".\\input.txt"));
             String lineText = null;
             lineText = lineReader.readLine();
             int T = Integer.parseInt(lineText);
@@ -23,10 +23,10 @@ public class Derivative {
                 lineText = lineReader.readLine();
                 x = Integer.parseInt(lineText);
                 map = polynomial(poli);
-                System.out.println(map.toString());
-                System.out.println(x);
+//                System.out.println(map.toString());
+//                System.out.println(x);
                 derivativeMap=derivative(map);
-                System.out.println(derivativeMap.toString());
+//                System.out.println(derivativeMap.toString());
                 Double slope = getSlope(derivativeMap, x);
                 System.out.println(slope.intValue());
             }
