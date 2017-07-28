@@ -1,6 +1,13 @@
 
+import java.awt.geom.Point2D;
 import java.util.*;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import mygraphdemo.MyThread;
+import mygraphdemo.Point;
+import mygraphdemo.Line;
 public class XTotalShapes {
 
     static Character[][] graph;
@@ -8,9 +15,10 @@ public class XTotalShapes {
     static int counter;
     static int rows;
     static int columns;
-
+    public static BlockingQueue<Object> q;
     public static void main(String[] args) {
-        MyThread m = new MyThread();
+        q = new LinkedBlockingDeque<>();
+        MyThread m = new MyThread(q);
         m.start();
         Scanner in = new Scanner(System.in);
         int T = new Integer(in.nextLine());
@@ -27,6 +35,14 @@ public class XTotalShapes {
                 for (int column = 0; column < columns; column++) {
                     graph[row][column] = currentRow.charAt(column);
                     visited[row][column] = Boolean.FALSE;
+                    //if it a vertice, draw
+                    if(graph[row][column]=='X'){
+                        try {
+                            q.put(new Point(row, column));
+                        } catch (InterruptedException ex) {
+                            Logger.getLogger(XTotalShapes.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    }
                 }
             }
 //            display(graph);

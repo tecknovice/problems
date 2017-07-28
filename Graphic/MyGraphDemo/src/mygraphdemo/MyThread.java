@@ -1,22 +1,41 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mygraphdemo;
 
-/**
- *
- * @author hungnv
- */
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.util.concurrent.BlockingQueue;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFrame;
+
 public class MyThread extends Thread {
+
+    BlockingQueue<Object> q;
 
     public void run() {
         System.out.println("Hello from a thread!");
-        MyGraph g = new MyGraph();
-        g.createAndShowGui();
+        MyGraph mainPanel = new MyGraph();
+        mainPanel.setPreferredSize(new Dimension(800, 600));
+        JFrame frame = new JFrame("DrawGraph");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(mainPanel);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+        while (true) {
+            try {
+                mainPanel.o = q.take();
+                Graphics g = mainPanel.getGraphics();
+                mainPanel.update(g);
+//                mainPanel.repaint();                
+            } catch (InterruptedException ex) {
+                Logger.getLogger(MyThread.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
     }
 
- 
+    public MyThread(BlockingQueue<Object> q) {
+        this.q = q;
+    }
 
 }
