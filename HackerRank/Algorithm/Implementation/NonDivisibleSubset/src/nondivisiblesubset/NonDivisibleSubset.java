@@ -31,7 +31,7 @@ public class NonDivisibleSubset {
     public static void main(String[] args) {
                  BufferedReader lineReader = null;
         try {
-            lineReader = new BufferedReader(new FileReader("C:\\Users\\hungn_000\\Downloads\\test.in"));
+            lineReader = new BufferedReader(new FileReader("..\\test.in"));
             String lineText = null;
             lineText = lineReader.readLine();
             String[] arr1 = new String[2];

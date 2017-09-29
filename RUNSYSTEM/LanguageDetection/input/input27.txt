@@ -1,0 +1,2 @@
+﻿Muss ich Bedenken haben, dass das Update mein System zerstört?
+Es ist sinnvoll, nicht gleich in den ersten Stunden oder Tagen auf ein neues System zu aktualisieren, sondern erst abzuwarten. Über größere Fehler von macOS High Sierra wird GIGA auf jeden Fall berichten. Auf das Thema „Backup“ haben wir ja schon oben hingewiesen ... Die letzten Beta-Versionen stimmen aber sehr zuversichtlich, und APFS läuft ja bereits auf iOS-Geräten seit Monaten (fast) problemlos.

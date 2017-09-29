@@ -28,7 +28,7 @@ import mygraphdemo.Point;
  *
  * @author hungnv
  */
-class MyGraph extends JPanel {
+class MyGraphic extends JPanel {
 
 	volatile Object o;
 	List<Object> objectList = new LinkedList<>();
@@ -64,6 +64,7 @@ class MyGraph extends JPanel {
 		Line l = null;
 		PointNo pn =null;
 		LineNo ln = null;
+		Graph graph =null;
 		if (o != null) {
 			String classname = o.getClass().getSimpleName();
 			switch (classname) {
@@ -82,6 +83,10 @@ class MyGraph extends JPanel {
 			case "LineNo":
 				ln =(LineNo) o;
 				objectList.add(ln);
+				break;
+			case "Graph":
+				graph = (Graph)o;
+				objectList.add(graph);
 				break;
 			default:
 				break;
@@ -118,6 +123,7 @@ class MyGraph extends JPanel {
 				g2.setStroke(GRAPH_STROKE);
 				g2.setColor(lineColor);
 				g2.drawLine(100 * ln.p1.x, 100 * ln.p1.y, 100 * ln.p2.x, 100 * ln.p2.y);
+				
 			default:
 				break;
 			}
@@ -125,28 +131,4 @@ class MyGraph extends JPanel {
 		// g.dispose();
 
 	}
-
-//	static void createAndShowGui() {
-//		// enter dummy data
-//		List<Double> scores = new ArrayList<>();
-//		Random random = new Random();
-//		int maxDataPoints = 40;
-//		int maxScore = 10;
-//		for (int i = 0; i < maxDataPoints; i++) {
-//			scores.add((double) random.nextDouble() * maxScore);
-//			// scores.add((double) i);
-//		}
-//
-//		// Graphic g=new Graphic
-//		// frame.paintComponents(g);
-//	}
-
-	// public static void main(String[] args) {
-	// SwingUtilities.invokeLater(new Runnable() {
-	// public void run() {
-	// createAndShowGui();
-	// }
-	// });
-	// System.out.println("main thread");
-	// }
 }

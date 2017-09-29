@@ -19,6 +19,7 @@ import mygraphdemo.*;
 public class NodesAtEvenDistance {
 
     static BlockingQueue<Object> q = new LinkedBlockingQueue<>();
+    static Graph g = new Graph();
     public static void main(String[] args) {
     	MyThread thread = new MyThread(q);
     	thread.start();
@@ -28,41 +29,37 @@ public class NodesAtEvenDistance {
         
         for (int index = 1; index <= T; index++) {
             N = new Integer(in.nextLine());
-            List<PointNo> list = new ArrayList<>(N+1);
             for(int j =1;j<=N;j++) {
-            	try {
+            	
             		PointNo p = new PointNo(Integer.toString(j));
-            		list.add(j, p);
-					q.put(p);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+					g.addVertice(p);
+				
             }
             String[] p = in.nextLine().split(" ");
             int i = -1;
-            while (true) {
+            while (i<p.length) {
                 i += 1;
-                Integer v1=null;
-                Integer v2 =null;
+                String v1=null;
+                String v2 =null;
                 if (i < p.length) {
-                    v1 = Integer.valueOf(p[i]);
+                    v1 =p[i];
                 }
 
                 i += 1;
                 if (i < p.length) {
-                    v2 = Integer.valueOf(p[i]);
+                    v2 = p[i];
                 }
                 if(v1!=null&&v2!=null){
-//                    LineNo line = new LineNo(list.get(v1), list.get(v2));
-//                    try {
-//						q.put(line);
-//					} catch (InterruptedException e) {
-//						// TODO Auto-generated catch block
-//						e.printStackTrace();
-//					}
+                    LineNo line = new LineNo(g.getVertice(v1),g.getVertice(v2));
+                    g.addEdge(line);
                 }
             }
+            try {
+				q.put(g);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         }
     }
 

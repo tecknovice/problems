@@ -13,7 +13,7 @@ public class MyThread extends Thread {
 
     public void run() {
         System.out.println("Hello from a thread!");
-        MyGraph mainPanel = new MyGraph();
+        MyGraphic mainPanel = new MyGraphic();
         mainPanel.setPreferredSize(new Dimension(800, 600));
         JFrame frame = new JFrame("DrawGraph");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -36,6 +36,9 @@ public class MyThread extends Thread {
 
     public MyThread(BlockingQueue<Object> q) {
         this.q = q;
+    }
+    public MyThread() {
+    	
     }
 
 }
