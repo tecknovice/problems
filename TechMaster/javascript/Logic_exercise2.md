@@ -1,7 +1,5 @@
 # Chuỗi đối xứng
 - Tạo  file ```Logic_exercise2.html``` với nội dụng sau
-- 
-- Viết thêm vào hàm ```checkSymmetricString``` để in ra Chuỗi và trạng thái của nó (đối xứng hoặc KO đối xứng)
 ```javascript
 <!DOCTYPE html>
 <html lang="en">
@@ -133,3 +131,4 @@
 
 </html>
 ```
+- Viết thêm vào hàm ```checkSymmetricString``` để in ra Chuỗi và trạng thái của nó (đối xứng hoặc KO đối xứng)
