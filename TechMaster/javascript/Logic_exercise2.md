@@ -123,6 +123,7 @@
         }
         (() => {
             input.forEach(str => {
+                if(checkSymetricString(str))
                 document.writeln(str, '-', checkSymetricString(str), '<br/>')
             });
         })
