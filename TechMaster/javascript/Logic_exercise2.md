@@ -114,8 +114,7 @@
             'My justice wishing prudent waiting in be',
             'Comparison age not pianoforte increasing delightful now',
             'Insipidity sufficient dispatched any reasonably led ask',
-            'Announcing if attachment resolution sentiments admiration me on diminution',
-
+            'Announcing if attachment resolution sentiments admiration me on diminution'
         ]
         function checkSymmetricString(str) {
             // trả về true nếu đối xưng
