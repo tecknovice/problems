@@ -3,11 +3,23 @@
 Tạo 1 list các sách bạn đã đọc và list các sách bạn muốn đọc
 - tạo 1 file HTML tên là ```DOM_exercise3.html``` có nội dung sau
 ```html
-
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>My Books List</h1>
+  <script>
+  
+  </script>
+ </body>
+</html>
 ```
 - Thêm thẻ script vào cuối trang web để viết code JS
 - Tạo 1 mảng các sách có cấu trúc sau(dữ liệu tự tìm)
-```json
+``` json
 [
   {title: 'The Design of EveryDay Things',
    author: 'Don Norman',
