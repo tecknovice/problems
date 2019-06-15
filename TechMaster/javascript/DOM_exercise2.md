@@ -2,7 +2,7 @@
 
 Mỗi trang web cần một phần "Giới thiệu".
 
-## Lưu đoạn mã sau vào file "DOM_exercise2.html":
+## Lưu đoạn mã sau vào file ```DOM_exercise2.html```
 ``` html
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,7 @@ Mỗi trang web cần một phần "Giới thiệu".
  </body>
 </html>
 ```
-## Sử dụng javascript để thay đổi style của các thành phần
+## Sử dụng javascript để thực hiện các việc 
 - Thêm một thẻ script vào dưới cùng.
 - Thay đổi font chữ của thẻ ```<body>``` trở thành  "Arial, sans-serif".
 - Thay thế từng phần (Nickname, Favorites, Hometown) bằng thông tin của riêng bạn.

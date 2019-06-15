@@ -1,6 +1,6 @@
 # Thư viện
 
-Tạo 1 list các sách bạn đã đọc và list các sách bạn muốn đọc
+Tạo 1 list các sách
 - tạo 1 file HTML tên là ```DOM_exercise3.html``` có nội dung sau
 ```html
 <!DOCTYPE html>
@@ -23,12 +23,12 @@ Tạo 1 list các sách bạn đã đọc và list các sách bạn muốn đọ
 [
   {title: 'The Design of EveryDay Things',
    author: 'Don Norman',
-   url: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
+   thumbnail: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
    alreadyRead: false
   },
   {title: 'The Most Human Human',
   author: 'Brian Christian',
-  url: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+  thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
   alreadyRead: true
   },
   ...
