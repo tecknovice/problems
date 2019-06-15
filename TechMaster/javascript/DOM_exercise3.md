@@ -1,6 +1,6 @@
 # Thư viện
 
-Tạo 1 list các sách bạn đã đọc và list các sách bạn muốn đọc
+Tạo 1 list các sách
 - tạo 1 file HTML tên là ```DOM_exercise3.html``` có nội dung sau
 ```html
 <!DOCTYPE html>
