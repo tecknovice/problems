@@ -4,6 +4,11 @@
 ![exercise2](./exercise2.png)
 - Nội dung text
 ```
+Dr. Norman Borlaug
+The man who saved a billion lives
+
+Dr. Norman Borlaug seen standing in Mexican wheat field with a group of biologists
+Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.
 Here's a time line of Dr. Borlaug's life:
 1914 - Born in Cresco, Iowa
 1933 - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"
@@ -24,4 +29,5 @@ Here's a time line of Dr. Borlaug's life:
 "Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."
 
 -- Indian Prime Minister Manmohan Singh
+If you have time, you should read more about this incredible human being on his Wikipedia entry.
 ```
