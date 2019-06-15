@@ -23,12 +23,12 @@ Tạo 1 list các sách
 [
   {title: 'The Design of EveryDay Things',
    author: 'Don Norman',
-   url: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
+   thumbnail: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
    alreadyRead: false
   },
   {title: 'The Most Human Human',
   author: 'Brian Christian',
-  url: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+  thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
   alreadyRead: true
   },
   ...
