@@ -1,5 +1,6 @@
 # Chuỗi đối xứng
-- Tạo  file ```Logic_exercise1.html``` với nội dụng sau
+**Chuỗi đối xứng là khi ta viết các ký tự của chuỗi từ cuối ngưoc lên đầu thì trả về 2 chuỗi giống nhau (không phân biệt hoa thường). Ví dụ về chuỗi đối xứng là ```Aha```**
+- Tạo  file ```Logic_exercise1.html``` với nội dung sau
 ```javascript
 <!DOCTYPE html>
 <html lang="en">
@@ -8,59 +9,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Chuỗi đối xứng</title>
 </head>
 
 <body>
-    <h1> Chuỗi đối xứng</h1>
+    <h1>Chuỗi đối xứng</h1>
     <script>
         let input = [
             'Aha',
             'sator arepo tenet opera rotas',
+            'Step on no pets',
             'Shot what able cold new the see hold',
             'Friendly as an betrayed formerly he',
             'Morning because as to society behaved moments',
             'Put ladies design mrs sister was',
-            'Don\'t nod.',
+            'Don\'t nod',
+            'Anna',
             'Play on hill felt john no gate',
-            'I did, did I?',
+            'I did, did I',
             'Am passed figure to marked in',
+            'Civic',
             'Prosperous middletons is ye inhabiting as assistance me especially',
             'For looking two cousins regular amongst',
             ' On it differed repeated wandered required in',
             'My gym',
+            'Kayak',
             'Then girl neat why yet knew rose spot',
             'Red rum, sir, is murder',
+            'Level',
             'Moreover property we he kindness greatest be oh striking laughter',
             'In me he at collecting affronting principles apartments',
+            'Madam',
             'Has visitor law attacks pretend you calling own excited painted',
             'Contented attending smallness it oh ye unwilling',
             'Turned favour man two but lovers',
-            'Step on no pets',
+            'Mom',
+            'Noon',
             'Suffer should if waited common person little oh',
             'Top spot',
+            'Racecar',
             'Improved civility graceful sex few smallest screened settling',
             'Likely active her warmly has',
-            'Was it a cat I saw?',
+            'Radar',
+            'Was it a cat I saw',
             ' And sir dare view but over man',
+            'Redder',
             'So at within mr to simple assure',
+            'Refer',
             'Mr disposing continued it offending arranging in we',
-            'Eva, can I see bees in a cave?',
+            'Eva, can I see bees in a cave',
             'Extremity as if breakfast agreement',
             'Off now mistress provided out horrible opinions',
             'No lemon, no melon',
+            'Repaper',
             'Prevailed mr tolerably discourse',
             'assurance estimable applauded to so',
+            'Rotator',
             'Him everything melancholy uncommonly',
             'solicitude inhabiting projection off',
+            'Rotor',
             'Connection stimulated estimating excellence an to impression',
             ' Sense child do state to defer mr of forty',
+            'Sagas',
             'Become latter but nor abroad wisdom waited',
+            'Solos',
             'Was delivered gentleman acuteness but daughters',
             'In as of whole as match asked',
+            'Stats',
             'Pleasure exertion put add entrance distance drawings',
             'In equally matters showing greatly it as',
             'Want name any wise are able park when',
+            'Tenet',
             'Saw vicinity judgment remember finished men throwing',
             ' No comfort do written conduct at prevent manners on',
             'Celebrated contrasted discretion',
@@ -76,6 +95,7 @@
             'To denoting admitted speaking learning my exercise so in',
             'Procured shutters mr it feelings',
             'To or three offer house begin taken am at',
+            'Wow',
             'As dissuade cheerful overcame so of friendly he indulged unpacked',
             'Alteration connection to so as collecting me',
             'Difficult in delivered extensive at direction allowance',
@@ -122,8 +142,8 @@
         }
         (() => {
             input.forEach(str => {
-                if(checkSymetricString(str))
-                document.writeln(str, '-', checkSymetricString(str), '<br/>')
+                if(checkSymmetricString(str))
+                document.writeln(str, '<br/>')
             });
         })
     </script>
@@ -131,4 +151,4 @@
 
 </html>
 ```
-- Viết thêm vào hàm ```checkSymmetricString``` để in ra Chuỗi và trạng thái của nó (đối xứng hoặc KO đối xứng)
+- Viết thêm vào hàm ```checkSymmetricString``` để in ra những chuỗi đối xứng trong list trên
