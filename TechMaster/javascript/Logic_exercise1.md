@@ -140,12 +140,13 @@
             // trả về true nếu đối xưng
             //trả về false nếu KO đỗi xứng
         }
-        (() => {
+        function main(){
             input.forEach(str => {
-                if(checkSymmetricString(str))
-                document.writeln(str, '<br/>')
-            });
-        })
+                if (checkSymmetricString(str))
+                    document.writeln(str, '<br/>')
+            })
+        }
+        main()
     </script>
 </body>
 
