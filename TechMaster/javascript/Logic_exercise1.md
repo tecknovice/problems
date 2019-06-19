@@ -1,6 +1,6 @@
 # Chuỗi đối xứng
 **Chuỗi đối xứng là khi ta viết các ký tự của chuỗi từ cuối ngưoc lên đầu thì trả về 2 chuỗi giống nhau (không phân biệt hoa thường). Ví dụ về chuỗi đối xứng là ```Aha```**
-- Tạo  file ```Logic_exercise1.html``` với nội dung sau
+- Tạo  file ```LOGIC_exercise1.html``` với nội dung sau
 ```javascript
 <!DOCTYPE html>
 <html lang="en">
