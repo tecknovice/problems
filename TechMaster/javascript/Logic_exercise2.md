@@ -1,134 +1,23 @@
-# Chuỗi đối xứng
-- Tạo  file ```Logic_exercise2.html``` với nội dụng sau
-```javascript
+# Số nguyên tố
+- Tạo file ```Logic_exercise2.html``` có nội dung sau
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-
 <body>
-    <h1> Chuỗi đối xứng</h1>
+    <h1>Số nguyên tố</h1>
     <script>
-        let input = [
-            'Aha',
-            'sator arepo tenet opera rotas',
-            'Shot what able cold new the see hold',
-            'Friendly as an betrayed formerly he',
-            'Morning because as to society behaved moments',
-            'Put ladies design mrs sister was',
-            'Don\'t nod.',
-            'Play on hill felt john no gate',
-            'I did, did I?',
-            'Am passed figure to marked in',
-            'Prosperous middletons is ye inhabiting as assistance me especially',
-            'For looking two cousins regular amongst',
-            ' On it differed repeated wandered required in',
-            'My gym',
-            'Then girl neat why yet knew rose spot',
-            'Red rum, sir, is murder',
-            'Moreover property we he kindness greatest be oh striking laughter',
-            'In me he at collecting affronting principles apartments',
-            'Has visitor law attacks pretend you calling own excited painted',
-            'Contented attending smallness it oh ye unwilling',
-            'Turned favour man two but lovers',
-            'Step on no pets',
-            'Suffer should if waited common person little oh',
-            'Top spot',
-            'Improved civility graceful sex few smallest screened settling',
-            'Likely active her warmly has',
-            'Was it a cat I saw?',
-            ' And sir dare view but over man',
-            'So at within mr to simple assure',
-            'Mr disposing continued it offending arranging in we',
-            'Eva, can I see bees in a cave?',
-            'Extremity as if breakfast agreement',
-            'Off now mistress provided out horrible opinions',
-            'No lemon, no melon',
-            'Prevailed mr tolerably discourse',
-            'assurance estimable applauded to so',
-            'Him everything melancholy uncommonly',
-            'solicitude inhabiting projection off',
-            'Connection stimulated estimating excellence an to impression',
-            ' Sense child do state to defer mr of forty',
-            'Become latter but nor abroad wisdom waited',
-            'Was delivered gentleman acuteness but daughters',
-            'In as of whole as match asked',
-            'Pleasure exertion put add entrance distance drawings',
-            'In equally matters showing greatly it as',
-            'Want name any wise are able park when',
-            'Saw vicinity judgment remember finished men throwing',
-            ' No comfort do written conduct at prevent manners on',
-            'Celebrated contrasted discretion',
-            'sympathize her collecting occasional',
-            'Do answered bachelor occasion in of offended no concerns',
-            'Supply worthy warmth branch of no ye',
-            'Voice tried known to as my to',
-            'Though wished merits or be',
-            'Alone visit use these smart rooms ham',
-            'No waiting in on enjoyed placing it inquiry',
-            ' Is at purse tried jokes china ready decay an',
-            'Small its shy way had woody downs power',
-            'To denoting admitted speaking learning my exercise so in',
-            'Procured shutters mr it feelings',
-            'To or three offer house begin taken am at',
-            'As dissuade cheerful overcame so of friendly he indulged unpacked',
-            'Alteration connection to so as collecting me',
-            'Difficult in delivered extensive at direction allowance',
-            'Alteration put use diminution',
-            'considered sentiments interested discretion',
-            'An seeing feebly stairs am branch income me unable',
-            ' Another journey chamber way yet females man',
-            'Way extensive and dejection get delivered deficient sincerity gentleman age',
-            'Too end instrument possession contrasted motionless',
-            'Calling offence six joy feeling',
-            'Coming merits and was talent enough far',
-            'Sir joy northward sportsmen education',
-            'Discovery incommode earnestly no he commanded if',
-            'Put still any about manor heard',
-            ' Performed suspicion in certainty so frankness by attention pretended',
-            'Newspaper or in tolerably education enjoyment',
-            'Extremity excellent certainty discourse sincerity no he so resembled',
-            'Joy house worse arise total boy but',
-            'Elderly up chicken do at feeling is',
-            'Like seen drew no make fond at on rent',
-            'Behaviour extremely her explained situation yet september gentleman are who',
-            'Is thought or pointed hearing he',
-            ' However venture pursuit he am mr cordial',
-            'Forming musical am hearing studied be luckily',
-            'Ourselves for determine attending how led gentleman sincerity',
-            'Valley afford uneasy joy she thrown though bed set',
-            'In me forming general prudent on country carried',
-            'Behaved an or suppose justice',
-            'Seemed whence how son rather easily and change missed',
-            'Off apartments invitation are unpleasant solicitude fat motionless interested',
-            'Hardly suffer wisdom wishes valley as an',
-            'As friendship advantages resolution it alteration stimulated he or increasing',
-            ' Bed sincerity yet therefore forfeited his certainty neglected questions',
-            'Pursuit chamber as elderly amongst on',
-            'Distant however warrant farther to of',
-            'My justice wishing prudent waiting in be',
-            'Comparison age not pianoforte increasing delightful now',
-            'Insipidity sufficient dispatched any reasonably led ask',
-            'Announcing if attachment resolution sentiments admiration me on diminution'
-        ]
-        function checkSymmetricString(str) {
-            // trả về true nếu đối xưng
-            //trả về false nếu KO đỗi xứng
-        }
-        (() => {
-            input.forEach(str => {
-                if(checkSymetricString(str))
-                document.writeln(str, '-', checkSymetricString(str), '<br/>')
-            });
-        })
+    function primeNumberList(maxVal = 1000){
+        // In ra trình duyệt sử dụng  document.write()
+    }
+    primeNumberList()
     </script>
 </body>
-
 </html>
 ```
-- Viết thêm vào hàm ```checkSymmetricString``` để in ra Chuỗi và trạng thái của nó (đối xứng hoặc KO đối xứng)
+- Thêm nội dung vào hàm primeNumberList để in tất cả các số nguyên tố nhỏ hơn 1000
