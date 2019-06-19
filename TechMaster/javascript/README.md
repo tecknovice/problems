@@ -4,4 +4,4 @@
 - Nộp file qua email tecknovice@gmail.com theo đinh dạng ```[Kiểm tra Javascirpt] <Tên_lớp>.<Tên_học_viên>```
 ## Ví dụ với học viên ```Ngô Thanh Vân``` ở lớp ```Web4```
 - đặt tên file nén là ```Web4_NgoThanhVan.zip```, 
-- gửi đến tecknovice@gmail.com theo với tiêu đề email là ```[Kiểm tra javascript]Web4_NgoThanhVan```
+- gửi đến tecknovice@gmail.com theo với tiêu đề email là ```[Kiểm tra Javascript]Web4_NgoThanhVan```
