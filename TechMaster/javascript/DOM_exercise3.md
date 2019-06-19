@@ -7,7 +7,7 @@ Tạo 1 list các sách
 <html>
  <head>
   <meta charset="utf-8"/>
-  <title>About Me</title>
+  <title>My Books List</title>
 </head>
 <body>
   <h1>My Books List</h1>
