@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Books List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+        .media{}
+        .media img{
+            width: 64px;
+
+        }
+        </style>
+</head>
+
+<body>
+    <h1>My Books List</h1>
+    <script>
+        let books = [
+            {
+                title: 'The Design of EveryDay Things',
+                author: 'Don Norman',
+                thumbnail: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
+                alreadyRead: false
+            },
+            {
+                title: 'The Most Human Human',
+                author: 'Brian Christian',
+                thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+                alreadyRead: true
+            }
+        ]
+        let booksList = document.createElement('div')
+        booksList.classList.add('books-list')
+        document.body.appendChild(booksList)
+        books.forEach(book => {
+            let bookCard = document.createElement('div')
+            bookCard.classList.add('card')
+            bookCard.classList.add('mb-3')
+            bookCard.classList.add('p-3')
+            let bookDiv = document.createElement('div')
+            bookDiv.classList.add('media')
+            bookDiv.innerHTML = `
+            <img src="${book.thumbnail}" class="mr-3" alt="book thumbnail">
+            <div class="media-body">
+                <h5 class="mt-0">${book.title}</h5>
+                <div>${book.author}</div>
+            </div>
+            `
+            booksList.appendChild(bookCard)
+            bookCard.appendChild(bookDiv)
+        });
+    </script>
+</body>
+
+</html>

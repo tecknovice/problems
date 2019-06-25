@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <style>
+        .listitem{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>About Me</h1>
+
+    <ul>
+        <li>Nickname: <span id="nickname"></span>
+        <li>Favorites: <span id="favorites"></span>
+        <li>Hometown: <span id="hometown"></span>
+    </ul>
+    <script>
+        document.body.style.fontFamily = 'Arial, sans-serif'
+        document.getElementById('nickname').innerText = 'Nguyen Van Hung'
+        document.getElementById('favorites').innerText = 'reading, sport'
+        document.getElementById('hometown').innerText = 'Hanoi'
+        let lis = document.getElementsByTagName('li')
+        for (let i = 0; i < lis.length; i++) {
+            const element = lis[i];
+            element.classList.add('listitem')
+        }
+        let image = new Image()
+        image.src = "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Avatar-Teaser-Poster.jpg/220px-Avatar-Teaser-Poster.jpg"
+        document.body.appendChild(image)
+    </script>
+</body>
+
+</html>
