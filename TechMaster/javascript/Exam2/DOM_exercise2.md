@@ -8,7 +8,7 @@
 <title>Thay đổi style</title>
 </head> 
 <body>
-<p id ='text'>javaScript test - techmaster</p>
+<p id ='text'>javascript test - techmaster</p>
 <div>
 <button id="changeStyle" onclick="changeStyle()">Change Style</button>
 <script>

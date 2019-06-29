@@ -23,6 +23,7 @@
                 document.write(i, '<br/>')
             } 
         }
+        main()
     </script>
 </body>
 
