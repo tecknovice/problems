@@ -17,10 +17,10 @@ Tạo file LOGIC_exercise3.html với nội dung sau
        function multiplesOfFiveandSeven(maxValue) {
            
         }
-        multiplesOfFiveandSeven(1000)
+        multiplesOfFiveandSeven(100)
     </script>
 </body>
 
 </html>
 ```
-- Thêm nội dung vào hàm ```multiplesOfFiveandSeven``` in ra các số là bội số của 5 hoặc 7 và nhỏ hơn hoặc bằng 1000
+- Thêm nội dung vào hàm ```multiplesOfFiveandSeven``` in ra các số là bội số của 5 hoặc 7 và nhỏ hơn hoặc bằng 100
