@@ -1,4 +1,4 @@
-# Bội số của 5 hoặc 7
+# Format số điện thoại
 Tạo file LOGIC_exercise2.html với nội dung sau
 ```html
 <!DOCTYPE html>
@@ -8,19 +8,39 @@ Tạo file LOGIC_exercise2.html với nội dung sau
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bội số của 5 hoặc 7</title>
+    <title>Format SĐT</title>
 </head>
 
 <body>
-    <h1>Bội số của 5 hoặc 7</h1>
+    <h1>Format SĐT</h1>
     <script>
-       function multiplesOfFiveandSeven(maxValue) {
-           
+        let data = [
+            '0945405667',
+            '0399563926',
+            '0362455817',
+            '0862283944',
+            '0329861893',
+            '0328542436',
+            '0335798445',
+            '0862729041',
+            '0862747205',
+            '0332018483'
+        ]
+
+        function formatPhoneNumber(phone){
+            return phone
         }
-        multiplesOfFiveandSeven(1000)
+       
+        function main() {
+            data.forEach(phone => {
+                document.writeln(`${phone} => ${formatPhoneNumber(phone)} <br/>`)
+            });
+        }
+        main()
     </script>
 </body>
 
 </html>
 ```
-- Thêm nội dung vào hàm ```multiplesOfFiveandSeven``` in ra các số là bội số của 5 hoặc 7
+- Thêm nội dung vào hàm ```formatPhoneNumber``` để format số điện thoại theo định dạng ```xxx xxx xxxx```
+    - ví dụ với số điện thoại ```0945405667```  thì sẽ trả về chuỗi ```094 540 5667``` 

@@ -1,5 +1,5 @@
 # Số chính phương
-**Số chính phương hay còn gọi là số hình vuông là số tự nhiên có căn bậc 2 là một số tự nhiên, hay nói cách khác, số chính phương là bình phương (lũy thừa bậc 2) của một số tự nhiên. Vài ví dụ về số chính phương là ```1, 4, 9, 16```**
+**Số chính phương hay còn gọi là số hình vuông là số tự nhiên có căn bậc 2 là một số tự nhiên, hay nói cách khác, số chính phương là bình phương (lũy thừa bậc 2) của một số tự nhiên. Vài ví dụ về số chính phương là  ```1, 4, 9, 16```**
 - Tạo  file ```LOGIC_exercise1.html``` với nội dung sau
 ```javascript
 <!DOCTYPE html>
