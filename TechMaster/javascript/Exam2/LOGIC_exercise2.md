@@ -33,7 +33,7 @@ Tạo file LOGIC_exercise2.html với nội dung sau
        
         function main() {
             data.forEach(phone => {
-                document.writeln(`${phone} => ${formatPhoneNumber(phone)} <br/>`)
+                document.writeln(`${formatPhoneNumber(phone)} <br/>`)
             });
         }
         main()
